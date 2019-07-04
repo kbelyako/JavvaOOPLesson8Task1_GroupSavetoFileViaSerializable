@@ -24,7 +24,7 @@ public class Human implements Comparable,Serializable {
 
 	public Human() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public String getfName() {
