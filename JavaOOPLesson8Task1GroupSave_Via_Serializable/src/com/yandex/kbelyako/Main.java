@@ -127,7 +127,7 @@ File t = new File("testGroup1.txt");
 groupFromFile1=Group.loadGroup(t);
 groupFromFile1.toStringTable();
 
-try(ObjectOutputStream OOS=new ObjectOutputStream(new FileOutputStream("fil"))){
+try(ObjectOutputStream OOS=new ObjectOutputStream(new FileOutputStream("fil1"))){
 OOS.writeObject(testGroup);
 } catch(IOException e){
 System.out.println("ERROR save group !!!");
@@ -136,7 +136,7 @@ System.out.println("ERROR save group !!!");
 Group  groupFromFile2 = new Group("GroupfromFile2");
 groupFromFile2=null;
 
-try (ObjectInputStream OIS=new ObjectInputStream(new FileInputStream("fil"))){
+try (ObjectInputStream OIS=new ObjectInputStream(new FileInputStream("fil1"))){
 	groupFromFile2=(Group)OIS.readObject();
 } catch(IOException |
 ClassNotFoundException e){
@@ -144,6 +144,19 @@ System.out.println("ERROR load group !!!");
 }
 
 groupFromFile2.toStringTable();
+
+Faculty testFaculty= new Faculty("Faculty2");
+File storage = new File("Faculty3");
+storage.mkdir();
+
+testFaculty.saveGroupToFile(groupFromFile2, "faculty2Group1");
+testFaculty.saveGroupToFile(groupFromFile1, "faculty2Group1");
+
+Group  groupFromFile3 = new Group("GroupfromFile3");
+groupFromFile3=null;
+groupFromFile3=testFaculty.loadGroupFromFile( "faculty2Group1");
+groupFromFile3.toStringTable();
+
 
 
 

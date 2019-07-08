@@ -1,0 +1,10 @@
+Petr Ivanovich Ivanov 19 male
+Evgeniy Ivanovich Gurin 19 male
+Alex Aleksandrovich Arbuzov 19 male
+Aleksey Olegovich Vasiliyev 19 male
+Dmitri Ivanovich Ivanov 18 male
+Olga Petrovna Kravtsova 21 female
+Petr Ivanovich Bublikov 22 male
+
+Aleksey Ivanovich Ivanov 17 male
+Dmitri Olegovich Afanasiev 18 male

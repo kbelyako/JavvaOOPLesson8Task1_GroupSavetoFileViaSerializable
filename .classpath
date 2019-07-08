@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JavaOOPLesson8Task1GroupSave_Via_Serializable/src"/>
+	<classpathentry kind="output" path="JavaOOPLesson8Task1GroupSave_Via_Serializable/bin"/>
+</classpath>
